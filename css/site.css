@@ -43,7 +43,7 @@ img { display: block; max-width: 100%; height: auto; }
 .skip-link:focus { transform: none; }
 .site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.25rem; padding-block: 1.4rem; border-bottom: 1px solid var(--line); }
 .wordmark { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); font-size: 1.1rem; font-weight: 600; text-decoration: none; letter-spacing: -.03em; }
-.wordmark img { flex: 0 0 44px; }
+.wordmark img { flex: 0 0 42px; }
 .wordmark__regions { display: block; color: var(--muted); font-size: .65rem; font-weight: 400; letter-spacing: .01em; }
 nav { display: flex; flex-wrap: wrap; gap: .6rem 1.3rem; }
 nav a { padding-block: .4rem; color: var(--ink); font-size: .85rem; text-decoration: none; }
