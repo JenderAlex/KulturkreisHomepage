@@ -63,11 +63,11 @@ Bei einem anderen Standardbranch den Push-Filter in `pages.yml` anpassen. Alle A
 
 Eine konkrete Domain ist nicht angegeben; daher ist keine `CNAME`-Datei mit erfundenem oder beispielhaftem Domainnamen enthalten.
 
-1. Unter STRATO in den DNS-Einstellungen der gewünschten Domain für `www` einen **CNAME** auf `jenderalex.github.io` setzen.
-2. Für die Domain ohne `www` (Apex/root) die von GitHub Pages dokumentierten **A-Records** eintragen. GitHub veröffentlicht die aktuellen Zieladressen in der Anleitung [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site); bestehende, widersprüchliche A-/AAAA-/CNAME-Einträge am Apex entfernen.
-3. Im Repository unter **Settings → Pages → Custom domain** die echte Domain eintragen und speichern. Bei einer Projektseite sollte die Domain hier am Repository und nicht als Platzhalter in den Dateien hinterlegt werden.
-4. Nach erfolgreicher DNS-Prüfung **Enforce HTTPS** aktivieren. DNS-Änderungen und das Ausstellen des Zertifikats können Zeit benötigen.
-5. Falls die Domain geändert wird, GitHub Pages die Domainzuordnung aktualisieren lassen. Ein `CNAME`-Dateieintrag ist bei dieser Actions-Deployment-Konfiguration nicht erforderlich, solange GitHub Pages die benutzerdefinierte Domain in den Repository-Einstellungen verwaltet.
+1. Zuerst die Domain in den GitHub-Kontoeinstellungen verifizieren, um eine mögliche Domainübernahme zu verhindern.
+2. Im Repository unter **Settings → Pages → Custom domain** die echte gewünschte Domain (z. B. `www.<ihre-domain>`) eintragen und speichern, **bevor** DNS-Einträge gesetzt werden. Bei einer Projektseite wird die Domain hier am Repository konfiguriert, nicht als Projektpfad.
+3. Unter STRATO in den DNS-Einstellungen für `www` einen **CNAME** auf `jenderalex.github.io` setzen. Für die Domain ohne `www` (Apex/root, meist Host `@`) je einen **A-Record** auf `185.199.108.153`, `185.199.109.153`, `185.199.110.153` und `185.199.111.153` setzen. Optional kann IPv6 mit den vier GitHub-**AAAA-Records** eingerichtet werden (siehe offizielle Anleitung). Standard- oder widersprüchliche Apex-Einträge entfernen; keine Wildcard-DNS-Einträge verwenden.
+4. DNS kann bis zu 24 Stunden zur Verteilung benötigen. Nach erfolgreicher DNS-Prüfung **Enforce HTTPS** aktivieren; GitHub kann bis zu 24 Stunden für das Zertifikat benötigen.
+5. Falls die Domain geändert wird, GitHub Pages die Domainzuordnung aktualisieren lassen. Bei diesem Actions-Deployment wird keine `CNAME`-Datei erzeugt oder benötigt; GitHub verwaltet die Domain über die Repository-Einstellungen.
 
 Offizielle Details: [GitHub Pages: custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) und [STRATO: DNS-Einstellungen](https://www.strato.de/faq/domains/).
 
