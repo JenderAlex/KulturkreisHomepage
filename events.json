@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "title": "Klavierabend im Heimathaus",
+    "category": "Konzert",
+    "date": "2026-11-21",
+    "time": "19:30 Uhr",
+    "venue": "Heimathaus Bösel",
+    "status": "Freie Plätze verfügbar",
+    "description": "Ein stimmungsvoller Abend mit klassischer Klaviermusik und Werken europäischer Komponisten.",
+    "image": "./images/klavierabend.jpg",
+    "imageAlt": "Klavier auf einer Bühne mit warmem Licht",
+    "ticketUrl": "https://www.eventim.de/"
+  }
+]
