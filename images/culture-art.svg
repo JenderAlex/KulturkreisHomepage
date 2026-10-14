@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 740" width="680" height="740">
+  <defs>
+    <clipPath id="frame"><path d="M0 0h680v740H0z"/></clipPath>
+    <pattern id="lines" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 0v12" stroke="#f2f6fc" stroke-width="1" opacity=".24"/></pattern>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="#c9d8ef" d="M0 0h680v740H0z"/>
+    <circle cx="507" cy="146" r="98" fill="#8fb0e3"/>
+    <path d="M-90 740V310a258 258 0 0 1 516 0v430" fill="#0c4da2"/>
+    <path d="M-22 740V326a186 186 0 0 1 372 0v414" fill="#dfe9f7"/>
+    <path d="M44 740V341a119 119 0 0 1 238 0v399" fill="#231f20"/>
+    <path d="M100 740V353a63 63 0 0 1 126 0v387" fill="#c4d4ee"/>
+    <path d="M373 740V492a165 165 0 0 1 330 0v248" fill="#231f20"/>
+    <path d="M427 740V510a111 111 0 0 1 222 0v230" fill="#5a86c9"/>
+    <path d="M481 740V526a57 57 0 0 1 114 0v214" fill="#dfe9f7"/>
+    <path d="M0 614h680v126H0z" fill="#1b1718"/>
+    <path d="m0 654 680-89v45L0 699z" fill="#0c4da2"/>
+    <path d="m0 714 680-88v15L0 729z" fill="#c9d8ef"/>
+    <path d="M354 67h75m-38-38v76m-26-65 53 53m0-53-53 53" fill="none" stroke="#231f20" stroke-width="6"/>
+    <circle cx="557" cy="282" r="17" fill="#0c4da2"/>
+    <path d="M0 0h680v740H0z" fill="url(#lines)"/>
+  </g>
+</svg>
