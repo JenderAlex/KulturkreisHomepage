@@ -84,6 +84,7 @@ function renderEvent(event) {
     image.src = imageUrl;
     image.alt = typeof event.imageAlt === "string" ? event.imageAlt : "";
     image.loading = "lazy";
+    image.addEventListener("error", () => image.remove(), { once: true });
     card.prepend(image);
   }
 
@@ -129,4 +130,4 @@ async function loadEvents() {
   }
 }
 
-loadEvents();
+if (eventList) loadEvents();
