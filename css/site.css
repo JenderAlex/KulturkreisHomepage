@@ -96,9 +96,17 @@ noscript .event-message { margin-top: 1rem; }
 .content-panel h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
 .content-panel p:last-child { margin-bottom: 0; }
 .content-panel li + li { margin-top: .5rem; }
-.board-list { display: grid; grid-template-columns: minmax(0, max-content) minmax(0, 1fr); gap: .5rem 1.5rem; margin: 0 0 1.5rem; }
-.board-list dt { color: var(--muted); }
-.board-list dd { margin: 0; font-weight: 650; }
+.board .eyebrow { margin-bottom: .75rem; }
+.board__intro { max-width: 38rem; margin: 1rem 0 2rem; color: var(--muted); }
+.board-grid { display: grid; gap: 1rem; margin: 0; }
+.board-card { display: flex; flex-direction: column; gap: .35rem; min-width: 0; padding: 1.25rem 1.4rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); transition: border-color 150ms ease, background-color 150ms ease; }
+.board-card:hover { border-color: #b9c9e0; background: var(--brand-soft); }
+.board-card__role { color: var(--brand-dark); font-size: .72rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+.board-card__name { margin: 0; font-size: 1.15rem; font-weight: 600; line-height: 1.3; letter-spacing: -.02em; }
+.board-assessors { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.board-assessors h3 { font-size: 1.25rem; letter-spacing: -.03em; }
+.board-assessors__list { display: grid; gap: 0 1.25rem; margin: 1.25rem 0 0; padding: 0; list-style: none; }
+.content-panel .board-assessors__list li { margin: 0; padding-block: .65rem; border-bottom: 1px solid var(--line); }
 .contact-address { margin: 1rem 0; font-style: normal; }
 .contact-form { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
 .form-field { display: grid; gap: .4rem; }
@@ -126,6 +134,9 @@ noscript .event-message { margin-top: 1rem; }
   .section-heading { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 2rem; }
   .event-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .event-card { padding: 2rem; }
+  .board { padding: 2.5rem; }
+  .board-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+  .board-assessors__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .about { grid-template-columns: 1fr 2fr; align-items: center; padding: 3rem; }
   .about__mark { width: min(100%, 15rem); }
   .site-footer { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; }
@@ -139,5 +150,5 @@ noscript .event-message { margin-top: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .button { transition: none; }
+  .button, .board-card { transition: none; }
 }
