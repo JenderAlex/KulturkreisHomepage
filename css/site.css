@@ -108,6 +108,11 @@ noscript .event-message { margin-top: 1rem; }
 .form-field--checkbox input { width: 1.2rem; height: 1.2rem; margin: .2rem 0 0; accent-color: var(--brand); }
 .form-field--checkbox label { color: var(--muted); font-weight: 400; }
 .form-field--hidden { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-fieldset { display: grid; gap: 1rem; margin: 0; padding: 0; border: 0; min-width: 0; }
+.form-fieldset legend { margin-bottom: .75rem; padding: 0; font-weight: 650; }
+.form-grid { display: grid; gap: 1.25rem; }
+@media (min-width: 40rem) { .form-grid { grid-template-columns: 1fr 1fr; } .form-field--wide { grid-column: 1 / -1; } }
+.form-field--checkbox input[type="radio"] { border-radius: 50%; }
 .contact-form .button { justify-self: start; cursor: pointer; font-family: inherit; }
 
 @media (min-width: 700px) {
