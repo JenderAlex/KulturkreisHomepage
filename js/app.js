@@ -96,12 +96,13 @@ function renderEvent(event) {
   }
   if (meta.childElementCount) card.append(meta);
 
-  if (typeof event.status === "string" && event.status.trim()) {
-    addText(card, "p", "event-card__status", event.status.trim());
-  }
 
   if (typeof event.description === "string" && event.description.trim()) {
     addText(card, "p", "event-card__description", event.description.trim());
+  }
+
+  if (typeof event.status === "string" && event.status.trim()) {
+    addText(card, "p", "event-card__status", event.status.trim());
   }
 
   renderPrices(card, event);
