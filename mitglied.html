@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f8fd">
+  <title>Mitglied werden · Kulturkreis</title>
+  <link rel="icon" href="./images/logo.png" type="image/png">
+  <link rel="stylesheet" href="./css/site.css">
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header container">
+    <a class="wordmark" href="./index.html">
+      <img src="./images/logo.png" width="42" height="44" alt="">
+      <span>Kulturkreis <span class="wordmark__regions">Bösel · Saterland · Friesoythe</span></span>
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <a href="./index.html#veranstaltungen">Veranstaltungen</a>
+      <a href="./verein.html">Der Kulturkreis</a>
+      <a href="./mitglied.html" aria-current="page">Mitglied werden</a>
+      <a href="./kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1" class="container page-content">
+    <p class="eyebrow">Kulturkreis Bösel · Saterland · Friesoythe</p>
+    <h1>Mitglied werden</h1>
+    <p class="lead">Unterstützen Sie die Kultur in unserer Region und werden Sie Mitglied im Kulturkreis. Der Jahresbeitrag beträgt 30 € für eine Einzelmitgliedschaft und 40 € für eine Familienmitgliedschaft.</p>
+    <section class="content-panel" aria-labelledby="mitgliedsantrag">
+      <h2 id="mitgliedsantrag">Mitgliedsantrag</h2>
+      <form class="contact-form" action="https://formspree.io/f/xrperznd" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="Neuer Mitgliedsantrag">
+        <fieldset class="form-fieldset">
+          <legend>Art der Mitgliedschaft</legend>
+          <div class="form-field form-field--checkbox">
+            <input id="member-type-single" name="mitgliedschaft" type="radio" value="Einzelmitgliedschaft (30 € pro Jahr)" required checked>
+            <label for="member-type-single">Einzelmitgliedschaft – 30 € pro Jahr</label>
+          </div>
+          <div class="form-field form-field--checkbox">
+            <input id="member-type-family" name="mitgliedschaft" type="radio" value="Familienmitgliedschaft (40 € pro Jahr)">
+            <label for="member-type-family">Familienmitgliedschaft – 40 € pro Jahr</label>
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <legend>Persönliche Angaben</legend>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="member-firstname">Vorname</label>
+              <input id="member-firstname" name="vorname" type="text" autocomplete="given-name" maxlength="100" required>
+            </div>
+            <div class="form-field">
+              <label for="member-lastname">Nachname</label>
+              <input id="member-lastname" name="nachname" type="text" autocomplete="family-name" maxlength="100" required>
+            </div>
+            <div class="form-field form-field--wide">
+              <label for="member-street">Straße und Hausnummer</label>
+              <input id="member-street" name="strasse" type="text" autocomplete="street-address" maxlength="200" required>
+            </div>
+            <div class="form-field">
+              <label for="member-zip">PLZ</label>
+              <input id="member-zip" name="plz" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" title="Bitte eine fünfstellige Postleitzahl eingeben." required>
+            </div>
+            <div class="form-field">
+              <label for="member-city">Ort</label>
+              <input id="member-city" name="ort" type="text" autocomplete="address-level2" maxlength="100" required>
+            </div>
+            <div class="form-field">
+              <label for="member-email">E-Mail-Adresse</label>
+              <input id="member-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+            </div>
+            <div class="form-field">
+              <label for="member-phone">Telefon</label>
+              <input id="member-phone" name="telefon" type="tel" autocomplete="tel" maxlength="50" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <legend>Bankverbindung für den Jahresbeitrag</legend>
+          <div class="form-grid">
+            <div class="form-field form-field--wide">
+              <label for="member-iban">IBAN</label>
+              <input id="member-iban" name="iban" type="text" autocomplete="off" spellcheck="false" maxlength="42" pattern="\s*[A-Za-z]{2}[0-9]{2}(\s*[A-Za-z0-9]){11,30}\s*" title="Bitte eine gültige IBAN eingeben, z. B. DE12 3456 7890 1234 5678 90." required>
+            </div>
+            <div class="form-field">
+              <label for="member-bic">BIC</label>
+              <input id="member-bic" name="bic" type="text" autocomplete="off" spellcheck="false" maxlength="11" pattern="[A-Za-z]{6}[A-Za-z0-9]{2}([A-Za-z0-9]{3})?" title="Bitte eine gültige BIC mit 8 oder 11 Zeichen eingeben." required>
+            </div>
+            <div class="form-field">
+              <label for="member-bank">Kreditinstitut</label>
+              <input id="member-bank" name="kreditinstitut" type="text" maxlength="200" required>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-field form-field--hidden" aria-hidden="true">
+          <label for="member-gotcha">Dieses Feld bitte leer lassen</label>
+          <input id="member-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-field form-field--checkbox">
+          <input id="member-sepa" name="lastschrift" type="checkbox" value="ermächtigt" required>
+          <label for="member-sepa">Ich ermächtige den Kulturkreis Bösel-Saterland-Friesoythe e. V. bis auf Widerruf, den jeweils fälligen Jahresbeitrag von dem oben angegebenen Konto mittels Lastschrift einzuziehen.</label>
+        </div>
+        <div class="form-field form-field--checkbox">
+          <input id="member-consent" name="datenschutz" type="checkbox" value="zugestimmt" required>
+          <label for="member-consent">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meines Mitgliedsantrags über den Dienst Formspree übermittelt und vom Kulturkreis zur Mitgliederverwaltung verarbeitet werden. Weitere Informationen in den <a href="./datenschutz.html">Datenschutzhinweisen</a>.</label>
+        </div>
+        <button class="button" type="submit">Mitgliedsantrag absenden</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer container">
+    <p>© Kulturkreis Bösel · Saterland · Friesoythe</p>
+    <nav aria-label="Rechtliches">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+    </nav>
+  </footer>
+</body>
+</html>
