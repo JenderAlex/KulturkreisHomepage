@@ -8,11 +8,11 @@
     "description": "In seinem neuen Roman geht Frank Goosen in die Kneipe. Genauer gesagt ins „Haus Himmelreich“, die alte Eckkneipe, in der sich Geschichten und Schicksale kreuzen. Vor allem ist da Rita Urbaniak, Lovely Rita, die Wirtin, die eigentlich mal was ganz anderes machen wollte, der aber dann das Leben dazwischenkam. Der aus dem Ruhrgebiet stammende Kultautor",
     "image": "",
     "category": "Lesung",
-    "presalePrice": "13",
-    "boxOfficePrice": "15",
+    "presalePrice": "13€",
+    "boxOfficePrice": "15€",
     "ticketUrl": "",
     "status": "Tickets im Vorverkauf bei der Buchhandlung Schepers und der Bücherei St. Marien sowie an der Abendkasse erhältlich.",
-    "eventUrl": ""
+    "eventUrl": "https://www.eventim.de/"
   }
   ,
 {
@@ -23,8 +23,8 @@
   "description": "Die aus Hennef stammende Buchreferentin stellt Neuerscheinungen des Bücherherbstes vor.",
   "image": "",
   "category": "Buchvorstellung",
-  "presalePrice": "10 €",
-  "boxOfficePrice": "12 €",
+  "presalePrice": "10€",
+  "boxOfficePrice": "12€",
   "ticketUrl": "",
   "status": "Tickets im Vorverkauf bei der Buchhandlung Schepers und der Bücherei St. Marien sowie an der Abendkasse erhältlich.",
   "eventUrl": ""
@@ -38,8 +38,8 @@
   "description": "Christoph Tiemann und das Theater „ex libris“ aus Münster zeigen das Kultstück als stimmgewaltiges Ensemble-Live-Hörspiel und nehmen das Publikum mit auf eine Reise zwischen Lachen und Ernst.",
   "image": "",
   "category": "Live-Hörspiel",
-  "presalePrice": "20 €",
-  "boxOfficePrice": "22 €",
+  "presalePrice": "20€",
+  "boxOfficePrice": "22€",
   "ticketUrl": "",
   "status": "Tickets im Vorverkauf bei der Buchhandlung Schepers sowie an der Abendkasse erhältlich.",
   "eventUrl": ""
@@ -53,8 +53,8 @@
   "description": "Unter der Leitung von Adrian Langer präsentiert der Gemischte Chor Bösel in der Katholischen Kirche St. Cäcilia sein traditionelles Adventskonzert und lädt anschließend in das Begegnungszentrum ein. Veranstalter: Gemischter Chor Bösel.",
   "image": "",
   "category": "Konzert",
-  "presalePrice": "8 € (Schüler/Studenten: 5 €)",
-  "boxOfficePrice": "10 €",
+  "presalePrice": "8€ (Schüler/Studenten: 5€)",
+  "boxOfficePrice": "10€",
   "ticketUrl": "",
   "status": "Vorverkauf bei allen Chormitgliedern sowie bei EP Zemke und Drogerie Pleye. Ein Abendkassenpreis ist nicht angegeben.",
   "eventUrl": ""
@@ -68,7 +68,7 @@
   "description": "Ein Film von Regina Schilling. Schauspielerin Sandra Hüller nähert sich dem Leben von Ingeborg Bachmann an einem imaginären Tag und verleiht ihren Worten eine eindringliche Präsenz. Mit einem kunstvollen Geflecht aus improvisierten Szenen, Archivschätzen, Interviews und Bachmanns eigenen Texten durchmisst der Film die zentralen Lebensphasen der Autorin – von der Kriegskindheit in Kärnten, dem Aufstieg zum Star der Gruppe 47 bis zu den letzten Tagen in Rom. Der Weg ist gezeichnet von ihren komplizierten Beziehungen zu Paul Celan, Hans Werner Henze und Max Frisch und einem unnachgiebigen Ringen um eine eigene, radikale Sprache zwischen öffentlichem Ruhm und existenziellen Krisen.",
   "image": "",
   "category": "Film",
-  "presalePrice": "9 €",
+  "presalePrice": "9€",
   "boxOfficePrice": "",
   "ticketUrl": "",
   "status": "Tickets im Vorverkauf über cineo.de und bei der Buchhandlung Schepers erhältlich. Abendkassenpreis nicht angegeben.",
@@ -113,8 +113,8 @@
   "description": "Seit über zwanzig Jahren sind Kora und Anselm glücklich verheiratet. Lange Zeit war das kinderlose Paar gut aufeinander eingespielt: sie, die erfolgreiche Journalistin, er, der Biologe, der Woche für Woche in die Hauptstadt pendelte. Doch nach einer Herz-OP findet Kora nicht mehr in ihre frühere Form zurück. Ihr Beruf, ihre Ehe, ihr Lebensentwurf – alles steht plötzlich infrage. Als ein Bekannter sie um Hilfe bittet, stürzt sich Kora in eine ungewöhnliche Recherche. Anselm wiederum hat die Rente eingereicht. Er will die verbleibende Zeit mit Kora genießen und einen lang gehegten Traum umsetzen: einen Libellenteich im Garten. Der sorgfältig zwischen Nähe und Distanz austarierte Ehealltag gerät aus dem Takt.",
   "image": "",
   "category": "Lesung",
-  "presalePrice": "10 €",
-  "boxOfficePrice": "12 €",
+  "presalePrice": "10€",
+  "boxOfficePrice": "12€",
   "ticketUrl": "",
   "status": "Tickets im Vorverkauf bei der Buchhandlung Schepers und der Bücherei St. Marien sowie an der Abendkasse erhältlich.",
   "eventUrl": ""
@@ -128,10 +128,10 @@
   "description": "Das Programm ist eine musikalische Reise von Tango über Swing und Pop bis hin zum Irish Folk. Dabei steht das virtuose Spiel von Akkordeon und Geige im Vordergrund, begleitet vom groovigen Background durch Cajon, Perkussion und Piano. Aufgelockert werden die instrumentalen Darbietungen durch einige Songs, vorgetragen von Livia Treu und Zebu Hildebrandt. Freuen Sie sich auf einen abwechslungsreichen Abend voller Melodien und Rhythmen. AMano besteht aus Christian Kirschstein (Akkordeon), Livia Treu (Geige, Gesang), Zebu Hildebrandt (Piano, Gitarre, Gesang) und Peter Waldmann (Cajon, Perkussion).",
   "image": "",
   "category": "Konzert",
-  "presalePrice": "",
-  "boxOfficePrice": "",
+  "presalePrice": "13€",
+  "boxOfficePrice": "15€",
   "ticketUrl": "",
-  "status": "Preisangabe: 13–15 €. Aufteilung in Vorverkaufs- und Abendkassenpreis nicht angegeben.",
+  "status": "",
   "eventUrl": ""
 }
 
