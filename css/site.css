@@ -96,6 +96,9 @@ noscript .event-message { margin-top: 1rem; }
 .content-panel h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
 .content-panel p:last-child { margin-bottom: 0; }
 .content-panel li + li { margin-top: .5rem; }
+.board-list { display: grid; grid-template-columns: minmax(0, max-content) minmax(0, 1fr); gap: .5rem 1.5rem; margin: 0 0 1.5rem; }
+.board-list dt { color: var(--muted); }
+.board-list dd { margin: 0; font-weight: 650; }
 .contact-address { margin: 1rem 0; font-style: normal; }
 .contact-form { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
 .form-field { display: grid; gap: .4rem; }
