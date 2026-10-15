@@ -25,11 +25,49 @@
   <main id="main" tabindex="-1" class="container page-content">
     <p class="eyebrow">Kulturkreis Bösel · Saterland · Friesoythe</p>
     <h1>Kontakt</h1>
-    <p class="lead">Kontaktdaten wurden für diese Website noch nicht bereitgestellt.</p>
-    <section class="content-panel">
-      <h2>Kontaktmöglichkeiten werden ergänzt</h2>
-      <p>Sobald bestätigte Angaben vorliegen, werden hier die Ansprechpersonen und die verfügbaren Kontaktwege veröffentlicht. Aktuell sind weder eine Anschrift noch eine Telefonnummer oder E-Mail-Adresse angegeben.</p>
-      <p>Diese Seite bietet kein Kontaktformular und nimmt keine Nachrichten entgegen.</p>
+    <p class="lead">Sie erreichen uns telefonisch, per E-Mail oder über das Kontaktformular – wir melden uns so bald wie möglich bei Ihnen.</p>
+    <section class="content-panel" aria-labelledby="kontaktdaten">
+      <h2 id="kontaktdaten">Kontaktdaten</h2>
+      <address class="contact-address">
+        Kulturkreis Bösel-Saterland-Friesoythe e. V.<br>
+        Franziskusplatz 2<br>
+        26169 Friesoythe<br>
+        Deutschland
+      </address>
+      <p>
+        Telefon: <a href="tel:+494491928916">04491 / 928916</a><br>
+        E-Mail: <a href="mailto:buecherei@stmarienfriesoythe.de">buecherei@stmarienfriesoythe.de</a>
+      </p>
+    </section>
+    <section class="content-panel" aria-labelledby="kontaktformular">
+      <h2 id="kontaktformular">Kontaktformular</h2>
+      <form class="contact-form" action="https://formspree.io/f/mzedkqya" method="POST" accept-charset="UTF-8">
+        <div class="form-field">
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="200" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-email">E-Mail-Adresse</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-subject">Betreff <span class="form-field__optional">(optional)</span></label>
+          <input id="contact-subject" name="_subject" type="text" maxlength="200">
+        </div>
+        <div class="form-field">
+          <label for="contact-message">Nachricht</label>
+          <textarea id="contact-message" name="message" rows="7" maxlength="5000" required></textarea>
+        </div>
+        <div class="form-field form-field--hidden" aria-hidden="true">
+          <label for="contact-gotcha">Dieses Feld bitte leer lassen</label>
+          <input id="contact-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="form-field form-field--checkbox">
+          <input id="contact-consent" name="datenschutz" type="checkbox" value="zugestimmt" required>
+          <label for="contact-consent">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage über den Dienst Formspree übermittelt und verarbeitet werden. Weitere Informationen in den <a href="./datenschutz.html">Datenschutzhinweisen</a>.</label>
+        </div>
+        <button class="button" type="submit">Nachricht senden</button>
+      </form>
     </section>
     <section class="content-panel">
       <h2>Informationen zu Veranstaltungen</h2>
