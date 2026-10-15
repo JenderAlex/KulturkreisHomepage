@@ -27,6 +27,8 @@ Veranstaltungen zentral in [`events.json`](events.json) als JSON-Array pflegen. 
 | `imageAlt` | Optionaler Alternativtext zum Bild |
 | `category` | Optionale Kategorie |
 | `ticketUrl` | Verifizierte HTTPS-URL zum EVENTIM.Light-Shop oder zum konkreten Event |
+| `presalePrice` | Optionaler Vorverkaufspreis in Euro, als Zahl (z. B. `15` oder `12.5`, wird als „15,00 €“ angezeigt) oder als Text (z. B. `"ermäßigt 10 €"`) |
+| `boxOfficePrice` | Optionaler Preis an der Abendkasse, gleiches Format wie `presalePrice`. Leere oder fehlende Preise werden nicht angezeigt |
 | `status` | Optionaler, manuell gepflegter Status, z. B. „Ausverkauft“ oder „Abgesagt“ |
 
 Beispiel für einen **zu ersetzenden Datensatz** (keine echten Veranstaltungsdaten oder Ticketadresse):
@@ -41,6 +43,8 @@ Beispiel für einen **zu ersetzenden Datensatz** (keine echten Veranstaltungsdat
     "description": "Beschreibung ergänzen",
     "image": "",
     "category": "",
+    "presalePrice": "",
+    "boxOfficePrice": "",
     "ticketUrl": "",
     "status": ""
   }

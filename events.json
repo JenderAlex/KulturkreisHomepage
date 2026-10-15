@@ -9,6 +9,8 @@
     "description": "Ein stimmungsvoller Abend mit klassischer Klaviermusik und Werken europäischer Komponisten.",
     "image": "./images/klavierabend.jpg",
     "imageAlt": "Klavier auf einer Bühne mit warmem Licht",
+    "presalePrice": 15,
+    "boxOfficePrice": 18,
     "ticketUrl": "https://www.eventim.de/"
   }
 ]
