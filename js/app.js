@@ -46,6 +46,33 @@ function formatDate(date, time) {
     : formattedDate;
 }
 
+const priceFormatter = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" });
+
+function formatPrice(price) {
+  if (typeof price === "number") {
+    return Number.isFinite(price) && price >= 0 ? priceFormatter.format(price) : "";
+  }
+  return typeof price === "string" ? price.trim() : "";
+}
+
+function renderPrices(card, event) {
+  const prices = [
+    ["Vorverkauf", formatPrice(event.presalePrice)],
+    ["Abendkasse", formatPrice(event.boxOfficePrice)],
+  ].filter(([, value]) => value);
+  if (!prices.length) return;
+
+  const list = document.createElement("dl");
+  list.className = "event-card__prices";
+  for (const [label, value] of prices) {
+    const item = document.createElement("div");
+    addText(item, "dt", "", label);
+    addText(item, "dd", "", value);
+    list.append(item);
+  }
+  card.append(list);
+}
+
 function renderEvent(event) {
   if (!event || typeof event !== "object" || typeof event.title !== "string" || !event.title.trim()) {
     return null;
@@ -76,6 +103,8 @@ function renderEvent(event) {
   if (typeof event.description === "string" && event.description.trim()) {
     addText(card, "p", "event-card__description", event.description.trim());
   }
+
+  renderPrices(card, event);
 
   const imageUrl = validEventImage(event.image);
   if (imageUrl) {
