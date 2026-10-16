@@ -114,8 +114,17 @@ function renderEvent(event) {
     image.src = imageUrl;
     image.alt = typeof event.imageAlt === "string" ? event.imageAlt : "";
     image.loading = "lazy";
-    image.addEventListener("error", () => image.remove(), { once: true });
-    card.prepend(image);
+    const frame = document.createElement("div");
+    frame.className = "event-card__media";
+    const backdrop = document.createElement("img");
+    backdrop.className = "event-card__backdrop";
+    backdrop.src = imageUrl;
+    backdrop.alt = "";
+    backdrop.setAttribute("aria-hidden", "true");
+    backdrop.loading = "lazy";
+    image.addEventListener("error", () => frame.remove(), { once: true });
+    frame.append(backdrop, image);
+    card.prepend(frame);
   }
 
   const ticketUrl = validTicketUrl(event.ticketUrl);
