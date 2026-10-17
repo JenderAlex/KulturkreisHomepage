@@ -68,7 +68,7 @@
   "image": "images/Kinoabend_2026.png",
   "category": "Film",
   "presalePrice": "9€",
-  "boxOfficePrice": "",
+  "boxOfficePrice": "9€",
   "ticketUrl": "",
   "status": "Tickets im Vorverkauf über cineo.de und bei der Buchhandlung Schepers erhältlich. Abendkassenpreis nicht angegeben.",
   "eventUrl": ""
@@ -130,7 +130,7 @@
   "presalePrice": "13€",
   "boxOfficePrice": "15€",
   "ticketUrl": "",
-  "status": "",
+  "status": "Tickets im Vorverkauf bei der Buchhandlung Schepers sowie an der Abendkasse erhältlich.",
   "eventUrl": ""
 }
 
